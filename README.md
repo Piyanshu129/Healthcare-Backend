@@ -84,45 +84,49 @@ python manage.py migrate
 ## Start the development server:
 ```python manage.py runserver```
 
+---
 
 ## API Endpoints
 1.Authentication
 
--POST /api/auth/register/ – Register a new user
--POST /api/auth/login/ – Login and obtain JWT tokens
+- POST /api/auth/register/ – Register a new user
+- POST /api/auth/login/ – Login and obtain JWT tokens
 
 2.Patients
 
--POST /api/patients/ – Create a new patient
--GET /api/patients/ – Retrieve all patients
--GET /api/patients/<id>/ – Retrieve a single patient
--PUT /api/patients/<id>/ – Update patient details
--DELETE /api/patients/<id>/ – Delete a patient
+- POST /api/patients/ – Create a new patient
+- GET /api/patients/ – Retrieve all patients
+- GET /api/patients/<id>/ – Retrieve a single patient
+- PUT /api/patients/<id>/ – Update patient details
+- DELETE /api/patients/<id>/ – Delete a patient
 
 3.Doctors
 
--POST /api/doctors/ – Create a new doctor
--GET /api/doctors/ – Retrieve all doctors
--GET /api/doctors/<id>/ – Retrieve a single doctor
--PUT /api/doctors/<id>/ – Update doctor details
--DELETE /api/doctors/<id>/ – Delete a doctor
+- POST /api/doctors/ – Create a new doctor
+- GET /api/doctors/ – Retrieve all doctors
+- GET /api/doctors/<id>/ – Retrieve a single doctor
+- PUT /api/doctors/<id>/ – Update doctor details
+- DELETE /api/doctors/<id>/ – Delete a doctor
 
 4.Patient-Doctor Mapping
 
--POST /api/mappings/ – Assign a doctor to a patient
--GET /api/mappings/ – List all mappings
--GET /api/mappings/<patient_id>/ – List doctors for a patient
--DELETE /api/mappings/<id>/ – Remove a doctor from a patient
+- POST /api/mappings/ – Assign a doctor to a patient
+- GET /api/mappings/ – List all mappings
+- GET /api/mappings/<patient_id>/ – List doctors for a patient
+- DELETE /api/mappings/<id>/ – Remove a doctor from a patient
+
+---
+
 
 ## Testing with Postman
 
--Register a user (/api/auth/register/)
+- Register a user (/api/auth/register/)
 
--Login to get JWT tokens (/api/auth/login/)
+- Login to get JWT tokens (/api/auth/login/)
 
--Add JWT token in Postman Authorization → Bearer Token
+- Add JWT token in Postman Authorization → Bearer Token
 
--Test patient, doctor, and mapping endpoints
+- Test patient, doctor, and mapping endpoints
 
 
 
